@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Page Title</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" type="text/css" media="screen" href="style9.css" />
+	</head>
+	<body>
+		<div
+			id="main"
+			class="container p-0 mt-4 d-flex flex-column align-items-center justify-content-between"
+		>
+			<h3 id="header" class="display-2 fw-bold">Game of Life</h3>
+			<p class="lead fw-medium mb-1">Pick up the cells to plant a life</p>
+			<p class="fst-italic">cicle of life # <span id="cicle">0</span></p>
+
+			<div class="d-flex justify-content-around mb-4 gap-1" id="buttons">
+				<button onclick="newLife()" class="btn btn-primary btn-lg">New</button>
+				<button onclick="start()" class="btn btn-success btn-lg">Start</button>
+				<button onclick="end()" class="btn btn-danger btn-lg">End</button>
+			</div>
+
+			<div id="board"></div>
+		</div>
+
+		<script src="ex9.js"></script>
+	</body>
+</html>

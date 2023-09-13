@@ -1,0 +1,27 @@
+:root {
+	--main: #35b674;
+}
+#header {
+	color: var(--main);
+}
+#main {
+	width: 600px;
+	height: 100%;
+}
+#board {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(10, calc(100% / 10));
+	grid-template-rows: repeat(10, calc(100% / 10));
+	width: 500px;
+	height: 500px;
+}
+.cell {
+	border: 1px solid var(--main);
+	transition: background-color 0.2s ease;
+}
+
+#buttons {
+	width: 50%;
+	color: #decd79;
+}
